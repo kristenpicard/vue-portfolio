@@ -1,15 +1,15 @@
 <template>
-  <HelloWorld :msg="message"/>
+  <SideNavbarVue />
 </template>
 
 <script>
 import { ref } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import SideNavbarVue from './components/SideNavbar.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SideNavbarVue
   },
   setup() {
     const message = ref('Welcome to Your Vue.js App');
@@ -21,13 +21,15 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+body {
+  margin: unset;
 }
 </style>
